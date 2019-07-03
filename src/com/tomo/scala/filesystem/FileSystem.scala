@@ -13,7 +13,6 @@ object FileSystem extends App {
 
   val root = Directory.ROOT
 
-/*
   var state = State(root, root)
   val scanner = new Scanner(System.in)
 
@@ -23,10 +22,12 @@ object FileSystem extends App {
     state = Command.from(input).apply(state)
   }
 
- */
+ /*
 
   io.Source.stdin.getLines().foldLeft(State(root, root))((currentState, newline) => {
     currentState.show
     Command.from(newline).apply(currentState)
   })
+  
+  */
 }
